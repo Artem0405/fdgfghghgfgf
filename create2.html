@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Добавление Маленьких Господ</title>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Добавление Маленьких Господ</h1>
+    <form method="post", action="/create">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Введите название"><br>
+        <input type="text" class="form-control" name="place" id="place" placeholder="Местоположение"><br>
+        <input type="text" class="form-control" name="text" id="text" placeholder="Введите описание"><br>
+        <button class="btn btn-success" type="submit">Добавить</button>
+    </form>
+</div>
+
+{% endblock %}
